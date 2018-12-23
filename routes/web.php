@@ -15,6 +15,19 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::get('/manageuser', function () {
+    return view('manageuser');
+});
+
+Route::get('/cryptoexchange', function () {
+    return view('cryptoexchange');
+});
+
+Route::get('/setting', function () {
+    return view('setting');
+});
+
+
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
