@@ -45,7 +45,7 @@
                     <div class="login-form-body">
                         <div class="form-gp">
                             <label for="exampleInputEmail1">{{ __('E-Mail Address') }}</label>
-                            <input type="email" id="exampleInputEmail1" class="form-control{{ $errors->has('email') ? ' is-invalid' : '' }}" name="email" value="{{ old('email') }}" required autofocus>
+                            <input type="email" id="exampleInputEmail1" class="form-control{{ $errors->has('email') ? ' is-invalid' : '' }}" name="email" value="{{ old('email') }}">
                                 @if ($errors->has('email'))
                                     <span class="invalid-feedback" role="alert">
                                         <strong>{{ $errors->first('email') }}</strong>
@@ -86,7 +86,7 @@
                             </button>
                         </div>
                         <div class="form-footer text-center mt-5">
-                            <p class="text-muted">Don't have an account? <a href="register.html">Sign up</a></p>
+                            <p class="text-muted">Don't have an account? <a href={{ route('register') }}>Sign up</a></p>
                         </div>
                     </div>
                 </form>

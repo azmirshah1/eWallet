@@ -1,3 +1,4 @@
+@extends('layouts.design')
 <!doctype html>
 <html class="no-js" lang="en">
 
@@ -22,6 +23,7 @@
     <link rel="stylesheet" href="assets/css/responsive.css">
     <!-- modernizr css -->
     <script src="assets/js/vendor/modernizr-2.8.3.min.js"></script>
+
 </head>
 
 <body>
@@ -65,6 +67,9 @@
                                                      document.getElementById('logout-form').submit();">
                                         {{ __('Logout') }}
                                     </a>
+                                    <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                                        @csrf
+                                    </form>
                             </div>
                         </div>
                     </div>
@@ -378,7 +383,4 @@
 
 ----
 
-
-
-@extends('layouts.app')
 
