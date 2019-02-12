@@ -11,6 +11,10 @@
 |
 */
 
+Route::get('/resetpassword', function () {
+    return view('resetpassword');
+});
+
 Route::get('/', function () {
     return view('welcome');
 });
@@ -26,6 +30,8 @@ Route::get('/cryptoexchange', function () {
 Route::get('/setting', function () {
     return view('setting');
 });
+
+
 
 
 Auth::routes();
