@@ -1,10 +1,12 @@
+@extends('layouts.design')
+
 <!doctype html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>Laravel</title>
+        <title>Login</title>
 
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet" type="text/css">
@@ -65,29 +67,24 @@
     </head>
     <body>
         <div class="flex-center position-ref full-height">
-            @if (Route::has('login'))
-                <div class="top-right links">
+            <div class="content">
+                <div>
+                <img src="assets/images/login/ewallet red.png" alt="ewallet">
+                </div>
+
+                @if (Route::has('login'))
+                <div>
                     @auth
-                        <a href="{{ url('/home') }}">Home</a>
+                        <a class="btn btn-rounded btn-primary mb-3 btn-block" href="{{ url('/home') }}">Home</a>
                     @else
-                        <a href="{{ route('login') }}">Login</a>
+                        <a class="btn btn-rounded btn-primary mb-3 btn-block" href="{{ route('login') }}">Login</a>
 
                         @if (Route::has('register'))
-                            <a href="{{ route('register') }}">Register</a>
+                            <a class="btn btn-rounded btn-primary btn-block"href="{{ route('register') }}">Register</a>
                         @endif
                     @endauth
                 </div>
             @endif
-
-            <div class="content">
-                <div class="title m-b-md">
-                    Azmir Shah
-                </div>
-                <div class="links">
-                    <a href="https://fb.com/azmirshah">Facebook</a>
-                    <a href="https://github.com/azmirshah1">GitHub</a>
-                    <a href="https://azmirshah.com/">Website</a>
-                </div>
             </div>
         </div>
     </body>
