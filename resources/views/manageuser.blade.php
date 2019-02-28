@@ -116,93 +116,15 @@
                                                             </thead>
                                                             <tbody>
                                                                 <tr>
-                                                                    <td>Azmir Shah</td>
-                                                                    <td>askcoreunit</td>
-                                                                    <td>+60176591091</td>
-                                                                    <td>azmirshah1@gmail.com</td>
-                                                                    <td>Muar</td>
-                                                                    <td>Johor</td>
+                                                                @foreach($users as $user)
+                                                                    <td>{{ $user->name }}</td>
+                                                                    <td>{{ $user->email }}</td>
+                                                                    <td></td>
+                                                                    <td></td>
+                                                                    <td></td>
+                                                                    <td></td>
                                                                 </tr>
-                                                                <tr>
-                                                                    <td>Azrul Shah</td>
-                                                                    <td>azshah</td>
-                                                                    <td>+60184737748</td>
-                                                                    <td>azmirshah1@gmail.com</td>
-                                                                    <td>Batu Berendam</td>
-                                                                    <td>Melaka</td>
-                                                                </tr>
-                                                                <tr>
-                                                                    <td>Harun Din</td>
-                                                                    <td>h.din</td>
-                                                                    <td>+01129384778</td>
-                                                                    <td>haruncute@gmail.com</td>
-                                                                    <td>Johor Bharu</td>
-                                                                    <td>Johor</td>
-                                                                </tr>
-                                                                <tr>
-                                                                    <td>Siti Rafiah Binti Abdul Samad</td>
-                                                                    <td>siti</td>
-                                                                    <td>+6019659883723</td>
-                                                                    <td>makciti@gmail.com</td>
-                                                                    <td>Cheras</td>
-                                                                    <td>Kuala Lumpur</td>
-                                                                </tr>
-                                                                <tr>
-                                                                    <td>Kamilah Ahmad</td>
-                                                                    <td>kami.ahmad</td>
-                                                                    <td>+60198383728</td>
-                                                                    <td>kami.ahmad@gmail.com</td>
-                                                                    <td>Ipoh</td>
-                                                                    <td>Perak</td>
-                                                                </tr>
-                                                                <tr>
-                                                                    <td>Salmah Hasan</td>
-                                                                    <td>1Malaysia</td>
-                                                                    <td>+6038475748</td>
-                                                                    <td>salmah@1malaysia.my</td>
-                                                                    <td>Kuantan</td>
-                                                                    <td>Pahang</td>
-                                                                </tr>
-                                                                <tr>
-                                                                    <td>Yassin Zulkifli</td>
-                                                                    <td>yassin</td>
-                                                                    <td>+60148394557</td>
-                                                                    <td>yassin1@gmail.com</td>
-                                                                    <td>Sintok</td>
-                                                                    <td>Kedah</td>
-                                                                </tr>
-                                                                <tr>
-                                                                    <td>Kasim Selamat</td>
-                                                                    <td>kSelamat</td>
-                                                                    <td>+601837465673</td>
-                                                                    <td>kselamat@gmail.com</td>
-                                                                    <td>Kuala Perlis</td>
-                                                                    <td>Perlis</td>
-                                                                </tr>
-                                                                <tr>
-                                                                    <td>Siti Zulaika</td>
-                                                                    <td>ZulaikaRashid</td>
-                                                                    <td>+6012374758434</td>
-                                                                    <td>zulaikaRash@gmail.com</td>
-                                                                    <td>Kuala Selangor</td>
-                                                                    <td>Selangor</td>
-                                                                </tr>
-                                                                <tr>
-                                                                    <td>Harun Syed</td>
-                                                                    <td>harun_syed</td>
-                                                                    <td>+60174883923</td>
-                                                                    <td>harun_syed@gmail.com</td>
-                                                                    <td>Alor Setar</td>
-                                                                    <td>Kedah</td>
-                                                                </tr>
-                                                                <tr>
-                                                                    <td>Mahathir Muhamad</td>
-                                                                    <td>chedet</td>
-                                                                    <td>+6016283427372</td>
-                                                                    <td>chedet@gmail.com</td>
-                                                                    <td>Alor Setar</td>
-                                                                    <td>Kedah</td>
-                                                                </tr>
+                                                                @endforeach
                                                             </tbody>
                                                         </table>
                                                     </div>

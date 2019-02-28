@@ -19,9 +19,9 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/manageuser', function () {
-    return view('manageuser');
-});
+//Route::get('/manageuser', function () {
+    //return view('manageuser');
+//});
 
 Route::get('/cryptoexchange', function () {
     return view('cryptoexchange');
@@ -37,3 +37,4 @@ Route::get('/setting', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/manageuser', 'ManageUserController@index')->name('manageuser');
