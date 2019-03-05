@@ -38,3 +38,4 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/manageuser', 'ManageUserController@index')->name('manageuser');
+
