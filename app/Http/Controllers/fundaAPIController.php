@@ -25,14 +25,14 @@ class fundaAPIController extends Controller
     	$funda = fundaAPI::all();
     	$data = [];
     	foreach ($funda as $key => $value) {
-    		$data[] = ['id' => $value->id, 'name' =>$value->name];
+    		$data[] = ['id' => $value->id, 'name' =>$value->name, 'email' =>$value->email];
     	}
     	return response()->json($data);
     }
 
     	public function showdataapi($id)
     	{
-    	$funda = fundaAPI::find($id);
-    	return response()->json($funda);
+    	$funda = fundaAPI::where('id',$id)->select('id', 'name', 'email')->first();
+		return response()->json($funda);
     	}
 }

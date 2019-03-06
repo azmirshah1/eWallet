@@ -18,7 +18,5 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 });
 
 Route::get('/userapi', 'fundaAPIController@demoshowapi');
-
-
 Route::get('/userurl', 'fundaAPIController@datadisplayapi');
 Route::get('/userurl/{id}', 'fundaAPIController@showdataapi');
