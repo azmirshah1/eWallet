@@ -8,7 +8,7 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>{{ config('app.name', 'Laravel') }}</title>
+    <title>E-Wallet - @yield('title')</title>
 
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}" defer></script>
@@ -49,63 +49,59 @@
         <div class="loader"></div>
     </div>
     <!-- preloader area end -->
+
     <!-- page container area start -->
-
- 
-            <!-- page title area start -->
-             @if (session('status'))
-                <div class="alert alert-success" role="alert">
-                     {{ session('status') }}
+    <!-- page title area start -->
+     @if (session('status'))
+        <div class="alert alert-success" role="alert">
+             {{ session('status') }}
+        </div>
+    @endif
+    <div class="page-title-area">
+        <div class="row align-items-center">
+            <div class="col-sm-6">
+                <div class="breadcrumbs-area clearfix">
+                    <a href="{{ url('/home') }}"><img class="page-title pull-left" src="assets/images/login/ewallet logo.png" alt="avatar"></a>
+                    <ul class="breadcrumbs pull-left"><br>
+                        <li><a><h3>Dashboard</h3></a></li>
+                    </ul>
                 </div>
-            @endif
-            <div class="page-title-area">
-                <div class="row align-items-center">
-                    <div class="col-sm-6">
-                        <div class="breadcrumbs-area clearfix">
-                            <a href="{{ url('/home') }}"><img class="page-title pull-left" src="assets/images/login/ewallet logo.png" alt="avatar"></a>
-                            <ul class="breadcrumbs pull-left"><br>
-                                <li><a><h3>Dashboard</h3></a></li>
-
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-sm-6 clearfix">
-                        <div class="user-profile pull-right">
-                            <img class="avatar user-thumb" src="assets/images/author/avatar.png" alt="avatar">
-                            <h4 class="user-name dropdown-toggle" data-toggle="dropdown">Azmir Shah <i class="fa fa-angle-down"></i></h4>
-                            <div class="dropdown-menu">
-                                <a class="dropdown-item" href="#">Message</a>
-                                <a class="dropdown-item" href="#">Settings</a>
-                                <a class="dropdown-item" href="{{ route('logout') }}"
-                                       onclick="event.preventDefault();
-                                                     document.getElementById('logout-form').submit();">
-                                        {{ __('Logout') }}
-                                    </a>
-                                    <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
-                                        @csrf
-                                    </form>
-                            </div>
-                        </div>
+            </div>
+            <div class="col-sm-6 clearfix">
+                <div class="user-profile pull-right">
+                    <img class="avatar user-thumb" src="assets/images/author/avatar.png" alt="avatar">
+                    <h4 class="user-name dropdown-toggle" data-toggle="dropdown">Azmir Shah <i class="fa fa-angle-down"></i></h4>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#">Message</a>
+                        <a class="dropdown-item" href="#">Settings</a>
+                        <a class="dropdown-item" href="{{ route('logout') }}"
+                            onclick="event.preventDefault();
+                                document.getElementById('logout-form').submit();">
+                            {{ __('Logout') }}
+                        </a>
+                        <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                            @csrf
+                        </form>
                     </div>
                 </div>
             </div>
-            <!-- page title area end -->
-<!-- Content Start -->
-        <main>
-            @yield('content')
-        </main>
-<!-- Content End -->
+        </div>
+    </div>
+    <!-- page title area end -->
+    <!-- Content Start -->
+    <main>
+        @yield('content')
+    </main>
+    <!-- Content End -->
 
-        <!-- footer area start-->
-        <footer>
-            <div class="footer-area">
-                <p>© Copyright 2018 . All right reserved</p>
-            </div>
-        </footer>
-        <!-- footer area end-->
+    <!-- footer area start-->
+    <footer>
+        <div class="footer-area">
+            <p>Design By <a href="https://azmirshah.com">Azmir Shah</a> © Copyright 2018 . All right reserved</p>
+        </div>
+    </footer>
+    <!-- footer area end-->
     <!-- page container area end -->
-    <!-- offset area start -->
- 
 
     <!-- jquery latest version -->
     <script src="{{ asset('assets/js/vendor/jquery-2.2.4.min.js') }}"></script>
@@ -128,8 +124,10 @@
     zingchart.MODULESDIR = "https://cdn.zingchart.com/modules/";
     ZC.LICENSE = ["569d52cefae586f634c54f86dc99e6a9", "ee6b7db5b51705a13dc2339db3edaf6d"];
     </script>
+
     <!-- all line chart activation -->
     <script src="{{ asset('assets/js/line-chart.js') }}"></script>
+
     <!-- all pie chart -->
     <script src="{{ asset('assets/js/pie-chart.js') }}"></script>
 
