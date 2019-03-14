@@ -63,7 +63,7 @@
                 <div class="breadcrumbs-area clearfix">
                     <a href="{{ url('/home') }}"><img class="page-title pull-left" src="assets/images/login/ewallet logo.png" alt="avatar"></a>
                     <ul class="breadcrumbs pull-left"><br>
-                        <li><a><h3>Dashboard</h3></a></li>
+                        <li><a><h3>@yield('title')</h3></a></li>
                     </ul>
                 </div>
             </div>

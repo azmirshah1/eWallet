@@ -1,6 +1,6 @@
-    @section('title', 'Home')
-    @extends('layouts.design')
-    @section('content')
+@section('title', 'Crypto Exch')
+@extends('layouts.design')
+@section('content')
     <hr style="border-color: #9e0039;">
     <!-- nav tab start -->
     <div class="col-lg-12 mt-6">
@@ -427,5 +427,5 @@
     </div>
     </div>
 </div>
-    <!-- nav tab end -->
+<!-- nav tab end -->
 @endsection
