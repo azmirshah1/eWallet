@@ -10,6 +10,9 @@
 
     <title>E-Wallet - @yield('title')</title>
 
+    <!-- amcharts css -->
+    <link rel="stylesheet" href="https://www.amcharts.com/lib/3/plugins/export/export.css" type="text/css" media="all" />
+
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}" defer></script>
 
@@ -28,11 +31,18 @@
     <link href="{{ asset('assets/css/owl.carousel.min.css') }}" rel="stylesheet"> 
     <link href="{{ asset('assets/css/slicknav.min.css') }}" rel="stylesheet"> 
 
+    <!-- Start datatable css -->
+    <link href="{{ asset('assets/css/dataTables/jquery.dataTables.css') }}" rel="stylesheet">
+    <link href="{{ asset('assets/css/dataTables/dataTables.bootstrap4.min.css') }}" rel="stylesheet">
+    <link href="{{ asset('assets/css/dataTables/responsive.bootstrap.min.css') }}" rel="stylesheet">
+    <link href="{{ asset('assets/css/dataTables/responsive.jqueryui.min.css') }}" rel="stylesheet">
+
     <!-- others css -->
     <link href="{{ asset('assets/css/typography.css') }}" rel="stylesheet"> 
     <link href="{{ asset('assets/css/default-css.css') }}" rel="stylesheet"> 
     <link href="{{ asset('assets/css/styles.css') }}" rel="stylesheet"> 
     <link href="{{ asset('assets/css/responsive.css') }}" rel="stylesheet"> 
+
     <!-- modernizr css -->
     <script src="assets/js/vendor/modernizr-2.8.3.min.js"></script>
 
@@ -108,7 +118,7 @@
 
     <!-- bootstrap 4 js -->
     <script src="{{ asset('assets/js/popper.min.js') }}"></script>
-    <!-- <script src="{{ asset('assets/js/bootstrap.min.js') }}"> </script>-->
+{{--     <script src="{{ asset('assets/js/bootstrap.min.js') }}"> </script> --}}
     <script src="{{ asset('assets/js/owl.carousel.min.js') }}"></script>
     <script src="{{ asset('assets/js/metisMenu.min.js') }}"></script>
     <script src="{{ asset('assets/js/jquery.slimscroll.min.js') }}"></script>
@@ -127,6 +137,13 @@
 
     <!-- all line chart activation -->
     <script src="{{ asset('assets/js/line-chart.js') }}"></script>
+
+    <!-- Start datatable js -->
+    <script src="{{ asset('assets/js/dataTables/jquery.dataTables.js') }}"></script>
+    <script src="{{ asset('assets/js/dataTables/jquery.dataTables.min.js') }}"></script>
+    <script src="{{ asset('assets/js/dataTables/dataTables.bootstrap4.min.js') }}"></script>
+    <script src=" {{ asset('assets/js/dataTables/dataTables.responsive.min.js') }}"></script>
+    <script src="{{ asset('assets/js/dataTables/responsive.bootstrap.min.js') }}"></script>
 
     <!-- all pie chart -->
     <script src="{{ asset('assets/js/pie-chart.js') }}"></script>
