@@ -13,8 +13,7 @@
 	<label>Update Profile Image</label>
 	<input type="file" name="avatar">
 	<input type="hidden" name="_token" value="{{csrf_token()}}">
-	<input type="submit" name="submit" class="pull-right btn btn-small btn-primary">
-	
+	<input type="submit" name="submit" class="pull-right btn btn-small btn-primary">	
 </form>
         
 </div>
