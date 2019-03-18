@@ -1,4 +1,4 @@
-@section('title', 'Manage User')
+@section('title', 'Manage Users')
 @extends('layouts.design2')
 @section('content')
             <!-- sales report area start -->
