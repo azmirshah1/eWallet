@@ -39,5 +39,5 @@ Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/manageuser', 'ManageUserController@index')->name('manageuser');
 
-Route::get('/profile', 'UserController@profile');
-Route::post('/profile', 'UserController@updateAvatar');
+Route::get('profile', 'UserController@profile');
+Route::post('profile', 'UserController@updateAvatar');
