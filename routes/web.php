@@ -35,9 +35,11 @@ Route::get('/setting', function () {
 
 
 Auth::routes();
-
+Route::group(['middleware' => ['auth']], function() {
 Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/manageuser', 'ManageUserController@manage')->name('manageuser');
 
 Route::get('profile', 'UserController@profile');
 Route::post('profile', 'UserController@updateAvatar');
+});
+

@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use \App\User;
-
+use Auth;
 
 class ManageUserController extends Controller
 {
@@ -13,16 +13,6 @@ class ManageUserController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function __construct()
-    {
-        $this->middleware('auth');
-    }
-
-
-    public function index()
-    {
-      
-    }
 
     public function manage()
     {
