@@ -64,8 +64,8 @@
               <h2 class="my-4"><br></h2>
             </div>
             <div class="col-lg-4 col-sm-6 text-center mb-4">
-              <a href="manageuser"><img class="rounded-circle img-fluid d-block mx-auto" src="assets/images/mainbut/people.png" alt="">
-              <h3>Manage User</a>
+              <a href="manageusers"><img class="rounded-circle img-fluid d-block mx-auto" src="assets/images/mainbut/people.png" alt="">
+              <h3>Manage Users</a>
               </h3>
             </div>
             <div class="col-lg-4 col-sm-6 text-center mb-4">
