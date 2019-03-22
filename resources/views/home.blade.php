@@ -13,7 +13,7 @@
                             <div class="icon"><i class="fa fa-btc"></i></div>
                             <div class="s-report-title d-flex justify-content-between">
                                 <h4 class="header-title mb-0">Bitcoin (BTC)</h4>
-                                <p>24 H</p>
+                                <p id="hours"></p>
                             </div>
                             <div class="d-flex justify-content-between pb-2">
                                 <h2 id="BTCRates"></h2>
@@ -30,7 +30,7 @@
                             <div class="icon"><i class="fa fa-btc"></i></div>
                             <div class="s-report-title d-flex justify-content-between">
                                 <h4 class="header-title mb-0">Etherium (ETH)</h4>
-                                <p>24 H</p>
+                                <p id="hours1"></p>
                             </div>
                             <div class="d-flex justify-content-between pb-2">
                                 <h2 id="ETHRates"></h2>
@@ -47,7 +47,7 @@
                             <div class="icon"><i class="fa fa-eur"></i></div>
                             <div class="s-report-title d-flex justify-content-between">
                                 <h4 class="header-title mb-0">Cardano</h4>
-                                <p>24 H</p>
+                                <p id="hours2"></p>
                             </div>
                             <div class="d-flex justify-content-between pb-2">
                                 <h2 id="ADARates"></h2>
