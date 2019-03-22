@@ -12,11 +12,12 @@
                         <div class="s-report-inner pr--20 pt--30 mb-3">
                             <div class="icon"><i class="fa fa-btc"></i></div>
                             <div class="s-report-title d-flex justify-content-between">
-                                <h4 class="header-title mb-0"><div id="Currency"></div></h4>
+                                <h4 class="header-title mb-0">BTC</h4>
                                 <p>24 H</p>
                             </div>
                             <div class="d-flex justify-content-between pb-2">
-                                <h2><div id="BTCRates"></div></h2>
+{{--                                 <h2 id="BTCRates"><div id="MYRRates">sasasa</div></h2> --}}
+                            <div id="MYRRates">sasasa</div>
                                 <span>- 45.87</span>
                             </div>
                         </div>
