@@ -12,7 +12,7 @@
                         <div class="s-report-inner pr--20 pt--30 mb-3">
                             <div class="icon"><i class="fa fa-btc"></i></div>
                             <div class="s-report-title d-flex justify-content-between">
-                                <h4 class="header-title mb-0">1 BTC</h4>
+                                <h4 class="header-title mb-0">Bitcoin (BTC)</h4>
                                 <p>24 H</p>
                             </div>
                             <div class="d-flex justify-content-between pb-2">
@@ -29,11 +29,11 @@
                         <div class="s-report-inner pr--20 pt--30 mb-3">
                             <div class="icon"><i class="fa fa-btc"></i></div>
                             <div class="s-report-title d-flex justify-content-between">
-                                <h4 class="header-title mb-0">Bitcoin Dash</h4>
+                                <h4 class="header-title mb-0">Etherium (ETH)</h4>
                                 <p>24 H</p>
                             </div>
                             <div class="d-flex justify-content-between pb-2">
-                                <h2>$ 4567809,987</h2>
+                                <h2 id="ETHRates"></h2>
                                 <span>- 45.87</span>
                             </div>
                         </div>
@@ -46,11 +46,11 @@
                         <div class="s-report-inner pr--20 pt--30 mb-3">
                             <div class="icon"><i class="fa fa-eur"></i></div>
                             <div class="s-report-title d-flex justify-content-between">
-                                <h4 class="header-title mb-0">Euthorium</h4>
+                                <h4 class="header-title mb-0">Cardano</h4>
                                 <p>24 H</p>
                             </div>
                             <div class="d-flex justify-content-between pb-2">
-                                <h2>$ 4567809,987</h2>
+                                <h2 id="ADARates"></h2>
                                 <span>- 45.87</span>
                             </div>
                         </div>

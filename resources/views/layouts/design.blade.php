@@ -134,37 +134,26 @@
     request.send(); 
      
     request.onload = () => {
-      if (request.status === 200) {
-      console.log("Success")
-        //Extracting data
+        //BTC
         var BTCRates = JSON.parse(request.response).rates.BTC;
         var USDMYR = BTCRates * 4.069;
-        var BTCMYR = USDMYR.toFixed(2);
-
+        var BTCMYR = USDMYR.toFixed(3);
+        //ETH
+        var ETHRates = JSON.parse(request.response).rates.ETH;
+        var USDMYR = ETHRates * 4.069;
+        var ETHMYR = USDMYR.toFixed(3);
+        //ADA
+        var ADARates = JSON.parse(request.response).rates.ADA;
+        var USDMYR = ADARates * 4.069;
+        var ADAMYR = USDMYR.toFixed(3);
         
-/*        //Creating table
-        var table="<table>";
-        table+="<tr><td>Currency </td><td>Price</td></tr>"; 
-        table+="<tr><td>"+target+"</td><td>"+BTCprice+"</td></tr>";
-        table+="</table>";
-     */
-        //Showing the table inside table
-
-
-        
-        document.getElementById("BTCRates").innerHTML="MYR: " + BTCMYR;
-      
-        request.send();   
-      } 
+        document.getElementById("BTCRates").innerHTML="$ MYR " + BTCMYR;
+        document.getElementById("ETHRates").innerHTML="$ MYR " + ETHMYR;
+        document.getElementById("ADARates").innerHTML="$ MYR " + ADAMYR;
     };
-     
-    request.onerror = () => {
-      console.log("error")
-    };
+
 
     </script>
-
-
 
     <!-- start chart js -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.min.js"></script>
