@@ -131,7 +131,6 @@
     const request = new XMLHttpRequest();
      
     request.open('GET', 'http://api.coinlayer.com/api/live?access_key=022c4f9851295e8e3491e702e6189ac8');
-
     request.send(); 
      
     request.onload = () => {
@@ -139,6 +138,8 @@
       console.log("Success")
         //Extracting data
         var BTCRates = JSON.parse(request.response).rates.BTC;
+        var USDMYR = BTCRates * 4.069;
+        var BTCMYR = USDMYR.toFixed(2);
 
         
 /*        //Creating table
@@ -148,8 +149,10 @@
         table+="</table>";
      */
         //Showing the table inside table
+
+
         
-        document.getElementById("BTCRates").innerHTML="MYR: " + BTCRates;
+        document.getElementById("BTCRates").innerHTML="MYR: " + BTCMYR;
       
         request.send();   
       } 
@@ -158,13 +161,6 @@
     request.onerror = () => {
       console.log("error")
     };
-
-    //usage:
-    readTextFile("https://api.exchangeratesapi.io/latest?base=USD", function(text){
-    var MYRRates = JSON.parse(text).rates.MYR;
-    
-    document.getElementById("MYRRates").innerHTML="MYR: " + MYRRates;
-});
 
     </script>
 
