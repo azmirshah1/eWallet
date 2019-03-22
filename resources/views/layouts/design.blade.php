@@ -126,6 +126,43 @@
     <script src="{{ asset('assets/js/jquery.slimscroll.min.js') }}"></script>
     <script src="{{ asset('assets/js/jquery.slicknav.min.js') }}"></script>
 
+    <script type="text/javascript">
+
+    const request = new XMLHttpRequest();
+     
+    request.open('GET', 'http://api.coinlayer.com/api/live?access_key=022c4f9851295e8e3491e702e6189ac8');
+    request.send(); 
+     
+    request.onload = () => {
+      if (request.status === 200) {
+      console.log("Success")
+        //Extracting data
+        var Currency = JSON.parse(request.response).target;
+        var BTCRates = JSON.parse(request.response).rates.BTC;
+        
+/*        //Creating table
+        var table="<table>";
+        table+="<tr><td>Currency </td><td>Price</td></tr>"; 
+        table+="<tr><td>"+target+"</td><td>"+BTCprice+"</td></tr>";
+        table+="</table>";
+     */
+        //Showing the table inside table
+        document.getElementById("Currency").innerHTML=Currency;
+        document.getElementById("BTCRates").innerHTML=BTCRates;
+
+        request.send();   
+      } 
+    };
+     
+    request.onerror = () => {
+      console.log("error")
+    };
+
+
+    </script>
+
+
+
     <!-- start chart js -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.min.js"></script>
     <!-- start highcharts js -->
