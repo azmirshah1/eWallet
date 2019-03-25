@@ -149,17 +149,14 @@
 
         var timestamp = JSON.parse(request.response).timestamp;
         var date = new Date(timestamp*1000);
-        var hours = date.getHours();
-        var hours1 = date.getHours();
-        var hours2 = date.getHours();
 
         
         document.getElementById("BTCRates").innerHTML="$ MYR " + BTCMYR;
         document.getElementById("ETHRates").innerHTML="$ MYR " + ETHMYR;
         document.getElementById("ADARates").innerHTML="$ MYR " + ADAMYR;
-        document.getElementById("hours").innerHTML=hours + " Hours Ago";
-        document.getElementById("hours1").innerHTML=hours1 + " Hours Ago";
-        document.getElementById("hours2").innerHTML=hours2 + " Hours Ago";
+        // document.getElementById("hours").innerHTML=hours + ":" + minutes + " GMT";
+        document.getElementById("hours").innerHTML=date.toLocaleTimeString("en-US", {hour: 'numeric', minute:'numeric'});
+
 
     };
 
