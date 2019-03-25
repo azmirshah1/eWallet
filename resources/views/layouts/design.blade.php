@@ -129,8 +129,8 @@
     <script type="text/javascript">
 
     const request = new XMLHttpRequest();
-     
-    request.open('GET', 'http://api.coinlayer.com/api/live?access_key=022c4f9851295e8e3491e702e6189ac8');
+     //save api using - just enable when u need it
+    // request.open('GET', 'http://api.coinlayer.com/api/live?access_key=022c4f9851295e8e3491e702e6189ac8');
     request.send(); 
      
     request.onload = () => {
@@ -156,6 +156,8 @@
         document.getElementById("ADARates").innerHTML="$ MYR " + ADAMYR;
         // document.getElementById("hours").innerHTML=hours + ":" + minutes + " GMT";
         document.getElementById("hours").innerHTML=date.toLocaleTimeString("en-US", {hour: 'numeric', minute:'numeric'});
+                document.getElementById("hours1").innerHTML=date.toLocaleTimeString("en-US", {hour: 'numeric', minute:'numeric'});
+                        document.getElementById("hours2").innerHTML=date.toLocaleTimeString("en-US", {hour: 'numeric', minute:'numeric'});
 
 
     };
