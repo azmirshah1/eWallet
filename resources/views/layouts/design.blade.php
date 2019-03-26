@@ -39,6 +39,7 @@
 
     <!-- others css -->
     <link href="{{ asset('assets/css/typography.css') }}" rel="stylesheet"> 
+    {{-- Check --}}
     <link href="{{ asset('assets/css/default-css.css') }}" rel="stylesheet"> 
     <link href="{{ asset('assets/css/styles.css') }}" rel="stylesheet"> 
     <link href="{{ asset('assets/css/responsive.css') }}" rel="stylesheet"> 

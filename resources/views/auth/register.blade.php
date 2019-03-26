@@ -1,7 +1,6 @@
 @section('title', 'Register')
 @extends('layouts.log')
 @section('content')
-
     <!-- login area start -->
     <div class="login-area login-bg">
         <div class="container">

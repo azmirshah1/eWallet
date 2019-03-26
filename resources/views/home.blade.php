@@ -10,7 +10,7 @@
             <div class="col-md-4">
                 <div class="single-report mb-xs-30">
                     <div class="s-report-inner pr--20 pt--30 mb-3">
-                        <div class="icon"><i class="fa fa-btc"></i></div>
+                        <div class="icon"><img  src="assets/images/icon/cryptoIcon/btc.png"></div>
                         <div class="s-report-title d-flex justify-content-between">
                             <h4 class="header-title mb-0">Bitcoin (BTC)</h4>
                             <p id="hours"></p>
@@ -27,7 +27,7 @@
             <div class="col-md-4">
                 <div class="single-report mb-xs-30">
                     <div class="s-report-inner pr--20 pt--30 mb-3">
-                        <div class="icon"><i class="fa fa-btc"></i></div>
+                        <div class="icon"><img src="assets/images/icon/cryptoIcon/eth.png"></div>
                         <div class="s-report-title d-flex justify-content-between">
                             <h4 class="header-title mb-0">Etherium (ETH)</h4>
                             <p id="hours1"></p>
@@ -44,9 +44,9 @@
             <div class="col-md-4">
                 <div class="single-report">
                     <div class="s-report-inner pr--20 pt--30 mb-3">
-                        <div class="icon"><i class="fa fa-eur"></i></div>
+                        <div class="icon"><img src="assets/images/icon/cryptoIcon/ada.png"></i></div>
                         <div class="s-report-title d-flex justify-content-between">
-                            <h4 class="header-title mb-0">Cardano</h4>
+                            <h4 class="header-title mb-0">Cardano (ADA)</h4>
                             <p id="hours2"></p>
                         </div>
                         <div class="d-flex justify-content-between pb-2">

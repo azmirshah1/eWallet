@@ -819,8 +819,8 @@ ul.breadcrumbs {
     height: 95px;
     width: 100px;
     text-align: right;
-    padding-top: 40px;
-    padding-right: 22px;
+    padding-top: 32px; /*asal 40px*/
+    padding-right: 18px; /*asal 22px*/
     border-radius: 50%;
     position: absolute;
     left: -39px;
