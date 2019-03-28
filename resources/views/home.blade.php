@@ -14,10 +14,11 @@
                         <div class="s-report-title d-flex justify-content-between">
                             <h4 class="header-title mb-0">Bitcoin (BTC)</h4>
                             <p id="hours"></p>
+                                                        
                         </div>
                         <div class="d-flex justify-content-between pb-2">
                             <h2 id="BTCRates"></h2>
-                            <span>- 45.87</span>
+                            {{-- <span>- 45.87</span> --}}
                         </div>
                     </div>
                     <canvas id="coin_sales1" height="100"></canvas>
@@ -34,7 +35,7 @@
                         </div>
                         <div class="d-flex justify-content-between pb-2">
                             <h2 id="ETHRates"></h2>
-                            <span>- 45.87</span>
+                            {{-- <span>- 45.87</span> --}}
                         </div>
                     </div>
                     <canvas id="coin_sales2" height="100"></canvas>
@@ -51,7 +52,7 @@
                         </div>
                         <div class="d-flex justify-content-between pb-2">
                             <h2 id="ADARates"></h2>
-                            <span>- 45.87</span>
+                            {{-- <span>- 45.87</span> --}}
                         </div>
                     </div>
                     <canvas id="coin_sales3" height="100"></canvas>
