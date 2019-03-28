@@ -7,8 +7,11 @@
 
     <!--title-->
     <title>E-Wallet - @yield('title')</title>
+    
+    {{-- favicon --}}
+    <link rel="shortcut icon" href="{{{ asset('assets/images/icon/favicon/ew_fav.ico') }}}">
 
-       <!-- Main css -->
+    <!-- Main css -->
     <link href="{{ asset('assets/css/bootstrap.min.css') }}" rel="stylesheet">
     <link href="{{ asset('assets/css/font-awesome.min.css') }}" rel="stylesheet"> 
     <link href="{{ asset('assets/css/themify-icons.css') }}" rel="stylesheet"> 

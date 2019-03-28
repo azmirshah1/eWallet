@@ -86,5 +86,5 @@
     <!-- Team Members Row -->
 </div>
 {{-- save the api.they got limit 500 usage --}}
-{{-- <script src="{{ asset('assets/js/api.js') }}"></script> --}}
+<script src="{{ asset('assets/js/api.js') }}"></script>
 @endsection

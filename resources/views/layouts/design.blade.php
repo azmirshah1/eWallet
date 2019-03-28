@@ -9,7 +9,9 @@
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
     <title>E-Wallet - @yield('title')</title>
-
+    
+    {{-- favicon --}}
+    <link rel="shortcut icon" href="{{{ asset('assets/images/icon/favicon/ew_fav.ico') }}}">
     <!-- amcharts css -->
     <link rel="stylesheet" href="https://www.amcharts.com/lib/3/plugins/export/export.css" type="text/css" media="all" />
 

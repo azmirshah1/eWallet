@@ -5,6 +5,8 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        {{-- favicon --}}
+        <link rel="shortcut icon" href="{{{ asset('assets/images/icon/favicon/ew_fav.ico') }}}">
 
         <title>Login</title>
 
